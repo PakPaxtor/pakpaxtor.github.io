@@ -697,12 +697,38 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
 }
 
 @media (max-width: 900px){
-  body { padding-top: 70px; }
-  .site-header { padding: 16px 3vw; }
-  .logo { font-size: 1rem; }
-  .nav { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .nav a { margin-left: 12px; font-size: 0.9rem; }
-  .nav .cta { padding: 8px 16px; font-size: 0.85rem; }
+  body { padding-top: 64px; }
+  .site-header { 
+    padding: 12px 4vw; 
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .logo { 
+    font-size: 1.05rem; 
+    flex-shrink: 0;
+  }
+  .nav { 
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 6px; 
+    align-items: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { 
+    margin-left: 0; 
+    font-size: 0.85rem;
+    white-space: nowrap;
+    padding: 6px 10px;
+  }
+  .nav a:not(.cta)::after { display: none; }
+  .nav .cta { 
+    padding: 7px 14px; 
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
   
   .hero { padding: 4vh 0 2vh; }
   .hero h1 { font-size: clamp(28px, 8vw, 48px); line-height: 1.1; }
@@ -757,10 +783,15 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
 }
 
 @media (max-width: 700px){
+  body { padding-top: 58px; }
+  .site-header { padding: 10px 3vw; }
+  
   .grid.video-grid { grid-template-columns: 1fr; }
   .grid.video-grid.two-videos { grid-template-columns: 1fr; }
   
-  .nav a svg { width: 14px; height: 14px; }
+  .nav a svg { width: 13px; height: 13px; }
+  .nav a { font-size: 0.8rem; padding: 5px 9px; }
+  .nav .cta { padding: 6px 13px; font-size: 0.8rem; }
   
   .hero h1 br { display: none; }
   
@@ -775,13 +806,23 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
 
 @media (max-width: 480px){
   .container { width: 94%; }
-  body { padding-top: 65px; }
-  .site-header { padding: 12px 3vw; }
+  body { padding-top: 60px; }
+  .site-header { 
+    padding: 10px 3vw;
+    gap: 10px;
+  }
   .logo { font-size: 0.95rem; }
   
-  .nav a { margin-left: 8px; font-size: 0.8rem; }
-  .nav a svg { width: 13px; height: 13px; }
-  .nav .cta { padding: 7px 12px; font-size: 0.8rem; }
+  .nav { gap: 4px; }
+  .nav a { 
+    font-size: 0.78rem;
+    padding: 5px 8px;
+  }
+  .nav a svg { width: 12px; height: 12px; }
+  .nav .cta { 
+    padding: 6px 12px; 
+    font-size: 0.78rem;
+  }
   
   .hero h1 { font-size: clamp(24px, 9vw, 36px); margin-bottom: 16px; }
   .lead { font-size: 0.95rem; line-height: 1.7; }
