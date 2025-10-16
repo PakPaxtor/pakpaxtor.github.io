@@ -923,8 +923,7 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   
   #lang-switcher {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 12px;
     right: 4vw;
     margin-left: 0;
     padding-left: 0;
