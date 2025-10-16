@@ -200,6 +200,17 @@ a { color: var(--acc); text-decoration: none; }
   box-shadow: 0 10px 50px rgba(109, 40, 217,.2), inset 0 1px 0 rgba(255,255,255,.05);
   animation: glow-pulse 4s ease-in-out infinite;
 }
+.hero-media .hero-video-stack::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  z-index: 10;
+  animation: fade-out-cover 0.5s ease 2s forwards;
+}
+@keyframes fade-out-cover {
+  to { opacity: 0; pointer-events: none; }
+}
 .hero-media .hero-video-stack iframe { 
   width: 100%; aspect-ratio: 16/9; border:0; display: block; 
   pointer-events: none;
@@ -209,6 +220,7 @@ a { color: var(--acc); text-decoration: none; }
   content: ''; position: absolute; inset: 0; 
   pointer-events: none;
   background: linear-gradient(135deg, rgba(109, 40, 217,.1), transparent 50%);
+  z-index: 5;
 }
 .page { padding: 6vh 0; }
 .page-header h2 { 
