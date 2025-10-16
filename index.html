@@ -14,33 +14,37 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="author" content="Paco Pastor Gómez" />
   <link rel="me" href="https://www.linkedin.com/in/pacopastorgomez/" />
+  <link rel="alternate" hreflang="es" href="https://pakpaxtor.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://pakpaxtor.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://pakpaxtor.github.io/" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/favicon.png" />
 </head>
-<body>
+<body data-page="home">
 <header class="site-header">
   <a class="logo" href="index.html">PakPaxtor</a>
   <nav class="nav">
-    <a href="about/index.html">Sobre mí</a>
-    <a href="works/index.html">Proyectos</a>
-    <a href="experiments/index.html">Laboratorio</a>
-    <a href="manifesto/index.html">Manifiesto</a>
-    <a target="_blank" rel="noopener me" href="https://www.linkedin.com/in/pacopastorgomez/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.97-2.9 4v7.74h-5V8z"/></svg></a>
-    <a target="_blank" rel="noopener" href="https://www.instagram.com/pakpaxtor/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 007 13a5.5 5.5 0 0010 0 5.5 5.5 0 00-5-5.5zm0 2A3.5 3.5 0 1111.5 13 3.5 3.5 0 0112 9.5zM17.5 6A1.5 1.5 0 1116 7.5 1.5 1.5 0 0117.5 6z"/></svg></a>
-    <a target="_blank" rel="noopener" href="https://www.youtube.com/@pakpaxtor" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.8 3.5 12 3.5 12 3.5s-7.8 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.6.6 9.4.6 9.4.6s7.8 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
-    <a class="cta" href="contact/index.html">Conecta</a>
+    <a href="about/index.html" data-i18n="nav.about">Sobre mí</a>
+    <a href="works/index.html" data-i18n="nav.projects">Proyectos</a>
+    <a href="experiments/index.html" data-i18n="nav.lab">Laboratorio</a>
+    <a href="manifesto/index.html" data-i18n="nav.manifesto">Manifiesto</a>
+    <a href="contact/index.html" data-i18n="nav.connect">Conecta</a>
+    <div id="lang-switcher">
+      <button data-lang="es" aria-label="Español">ES</button>
+      <button data-lang="en" aria-label="English">EN</button>
+    </div>
   </nav>
 </header>
 
 <main class="container hero">
   <section class="hero-content">
-    <h1>PAK PAXTOR:<br>AI Content Developer</h1>
-    <p class="lead">Soy <strong>Paco Pastor Gómez</strong>. Diseño <strong>pipelines híbridos</strong> donde la IA generativa se integra con producción audiovisual tradicional. Desarrollo herramientas en <strong>Python</strong> que automatizan workflows creativos sin perder el factor humano.</p>
-    <p class="lead">Dirijo proyectos donde la IA deja de ser herramienta para convertirse en <strong>lenguaje creativo</strong>. Personajes virtuales que hablan, canales que se gestionan solos, contenido que se genera y publica sin intervención. <strong>No reemplazo creativos—amplifico su alcance.</strong></p>
+    <h1 data-i18n="home.title">PAK PAXTOR:<br>AI Content Developer</h1>
+    <p class="lead" data-i18n="home.lead1">Soy <strong>Paco Pastor Gómez</strong>. Diseño <strong>pipelines híbridos</strong> donde la IA generativa se integra con producción audiovisual tradicional. Desarrollo herramientas en <strong>Python</strong> que automatizan workflows creativos sin perder el factor humano.</p>
+    <p class="lead" data-i18n="home.lead2">Dirijo proyectos donde la IA deja de ser herramienta para convertirse en <strong>lenguaje creativo</strong>. Personajes virtuales que hablan, canales que se gestionan solos, contenido que se genera y publica sin intervención. <strong>No reemplazo creativos—amplifico su alcance.</strong></p>
     <div class="buttons">
-      <a class="btn" href="works/index.html">Ver proyectos</a>
-      <a class="btn secondary" href="experiments/index.html">Entrar al laboratorio</a>
+      <a class="btn" href="works/index.html" data-i18n="home.btn.projects">Ver proyectos</a>
+      <a class="btn secondary" href="experiments/index.html" data-i18n="home.btn.lab">Entrar al laboratorio</a>
     </div>
     <div class="brands">
       <span>History&nbsp;Channel</span><span>Atlético&nbsp;de&nbsp;Madrid</span><span>Magnum</span><span>KFC</span><span>Taco&nbsp;Bell</span><span>ING</span><span>BBVA</span><span>BBC</span><span>Amazon</span><span>Telefónica</span>
@@ -58,7 +62,7 @@
   </section>
 </main>
 <footer class="site-footer">
-  <p>© 2025 PakPaxtor — Hecho con HTML/CSS y GitHub Pages.</p>
+  <p>© 2025 PakPaxtor — <span data-i18n="footer.credit">Hecho con HTML/CSS y GitHub Pages.</span></p>
   <p>
     <a target="_blank" rel="noopener me" href="https://www.linkedin.com/in/pacopastorgomez/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.97-2.9 4v7.74h-5V8z"/></svg></a>
     <a target="_blank" rel="noopener" href="https://www.instagram.com/pakpaxtor/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 007 13a5.5 5.5 0 0010 0 5.5 5.5 0 00-5-5.5zm0 2A3.5 3.5 0 1111.5 13 3.5 3.5 0 0112 9.5zM17.5 6A1.5 1.5 0 1116 7.5 1.5 1.5 0 0117.5 6z"/></svg></a>
@@ -66,5 +70,6 @@
   </p>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>
