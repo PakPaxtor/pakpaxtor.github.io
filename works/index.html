@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos — PakPax</title>
+  <meta name="description" content="PakPax — Portfolio y Laboratorio AI" />
+  <meta property="og:title" content="Proyectos — PakPax" />
+  <meta property="og:description" content="PakPax — Portfolio y Laboratorio AI" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="icon" href="../assets/img/favicon.png" />
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="../index.html">PakPax</a>
+  <nav class="nav">
+    <a href="../works/index.html">Proyectos</a>
+    <a href="../experiments/index.html">Laboratorio</a>
+    <a href="../manifesto/index.html">Manifiesto</a>
+    <a class="cta" href="../contact/index.html">Conecta</a>
+  </nav>
+</header>
+
+<main class="container page">
+  <header class="page-header">
+    <h2>Proyectos</h2>
+    <p>Selección de campañas, piezas audiovisuales y proyectos creativos que combinan narrativa, dirección y tecnología.</p>
+  </header>
+
+  <section class="tabs">
+    <button class="tab active" data-target="#tab-ad">Publicidad / Dirección Creativa</button>
+    <button class="tab" data-target="#tab-genai">IA / Generative Video</button>
+    <button class="tab" data-target="#tab-dop">Dirección de Fotografía</button>
+  </section>
+
+  <section id="tab-ad" class="grid show">
+    <article class="card">
+      <div class="thumb"></div>
+      <h3>ING — Concept Spot</h3>
+      <p>Spot donde la historia y la estética se encuentran.</p>
+      <ul class="meta"><li>Rol: Dirección Creativa</li><li>Año: 2025</li></ul>
+    </article>
+    <article class="card">
+      <div class="thumb"></div>
+      <h3>Taco Bell — Tontaco</h3>
+      <p>Campaña con tono humor y timing millennial.</p>
+      <ul class="meta"><li>Rol: Dirección Creativa</li><li>Año: 2024</li></ul>
+    </article>
+  </section>
+
+  <section id="tab-genai" class="grid">
+    <article class="card">
+      <div class="thumb"></div>
+      <h3>Veo 3 — Short Concept</h3>
+      <p>Narrativa creada con modelos generativos (Sora, Veo, Kling).</p>
+      <ul class="meta"><li>Herramientas: Veo 3, Sora 2</li></ul>
+    </article>
+    <article class="card">
+      <div class="thumb"></div>
+      <h3>Kling 2.5 — Look Dev</h3>
+      <p>Exploración de gramática del movimiento y consistencia visual.</p>
+      <ul class="meta"><li>Herramientas: Kling 2.5</li></ul>
+    </article>
+  </section>
+
+  <section id="tab-dop" class="grid">
+    <article class="card">
+      <div class="thumb"></div>
+      <h3>Color & Luz — Serie</h3>
+      <p>Dirección de fotografía: atmósferas, textura y contraste.</p>
+      <ul class="meta"><li>Rol: DOP</li></ul>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>© 2025 PakPax — Hecho con HTML/CSS y GitHub Pages.</p>
+</footer>
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+const sections = document.querySelectorAll('main .grid');
+tabs.forEach(function(t){
+  t.addEventListener('click', function(){
+    tabs.forEach(function(tb){ tb.classList.remove('active'); });
+    t.classList.add('active');
+    sections.forEach(function(s){ s.classList.remove('show'); });
+    var target = document.querySelector(t.getAttribute('data-target'));
+    if (target) target.classList.add('show');
+  });
+});
+</script>
+</body>
+</html>
