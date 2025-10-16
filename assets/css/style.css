@@ -688,6 +688,14 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   color: var(--brand-light);
 }
 
+/* Two Column Layout */
+.two-col-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 24px 0;
+}
+
 /* Responsive */
 @media (max-width: 1200px){
   .hero { grid-template-columns: 1fr; gap: 32px; }
@@ -728,6 +736,11 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
     padding: 7px 14px; 
     font-size: 0.82rem;
     flex-shrink: 0;
+  }
+  
+  .two-col-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
   
   .hero { padding: 4vh 0 2vh; }
