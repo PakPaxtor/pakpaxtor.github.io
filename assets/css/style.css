@@ -988,8 +988,6 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   .nav a { font-size: 0.8rem; padding: 5px 9px; }
   .nav .cta { padding: 6px 13px; font-size: 0.8rem; }
   
-  .hero h1 br { display: none; }
-  
   .brands { flex-direction: column; text-align: center; }
   .brands::before { display: block; margin-bottom: 8px; }
   

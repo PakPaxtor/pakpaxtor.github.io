@@ -14,7 +14,7 @@ const translations = {
     'nav.connect': 'Conecta',
     
     // ===== HOMEPAGE =====
-    'home.title': 'PAK PAXTOR:<br>AI Content Developer',
+    'home.title': 'PAK PAXTOR<br>AI Content Developer',
     'home.lead1': 'Soy <strong>Paco Pastor Gómez</strong>. Diseño <strong>pipelines híbridos</strong> donde la IA generativa se integra con producción audiovisual tradicional. Desarrollo herramientas en <strong>Python</strong> que automatizan workflows creativos sin perder el factor humano.',
     'home.lead2': 'Dirijo proyectos donde la IA deja de ser herramienta para convertirse en <strong>lenguaje creativo</strong>. Personajes virtuales que hablan, canales que se gestionan solos, contenido que se genera y publica sin intervención. <strong>No reemplazo creativos—amplifico su alcance.</strong>',
     'home.btn.projects': 'Ver proyectos',
@@ -292,7 +292,7 @@ const translations = {
     'nav.connect': 'Connect',
     
     // ===== HOMEPAGE =====
-    'home.title': 'PAK PAXTOR:<br>AI Content Developer',
+    'home.title': 'PAK PAXTOR<br>AI Content Developer',
     'home.lead1': 'I\'m <strong>Paco Pastor Gómez</strong>. I design <strong>hybrid pipelines</strong> where generative AI integrates with traditional audiovisual production. I develop tools in <strong>Python</strong> that automate creative workflows without losing the human factor.',
     'home.lead2': 'I direct projects where AI stops being a tool and becomes a <strong>creative language</strong>. Virtual characters that speak, channels that manage themselves, content that generates and publishes without intervention. <strong>I don\'t replace creatives—I amplify their reach.</strong>',
     'home.btn.projects': 'View projects',
