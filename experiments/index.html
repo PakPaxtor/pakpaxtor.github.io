@@ -3,84 +3,253 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Laboratorio — PakPax</title>
-  <meta name="description" content="PakPax — Portfolio y Laboratorio AI" />
-  <meta property="og:title" content="Laboratorio — PakPax" />
-  <meta property="og:description" content="PakPax — Portfolio y Laboratorio AI" />
+  <title>Laboratorio — PakPaxtor | Experimentos de IA Generativa</title>
+  <meta name="description" content="Experimentos con IA generativa: video, música, narrativa y automatización creativa. Radio Laion (canal de música IA), Portal ZEN (meditación), y pruebas técnicas con VEO3, Runway, Seedance." />
+  <meta property="og:title" content="Laboratorio — PakPaxtor | Experimentos de IA Generativa" />
+  <meta property="og:description" content="Experimentos con IA generativa: video, música, narrativa y automatización creativa. Radio Laion, Portal ZEN, VEO3, Runway, Seedance." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0b0b0f" />
+  <link rel="canonical" href="https://pakpaxtor.github.io/experiments/">
+  <meta property="og:url" content="https://pakpaxtor.github.io/experiments/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="author" content="Paco Pastor Gómez" />
+  <link rel="me" href="https://www.linkedin.com/in/pacopastorgomez/" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="icon" href="../assets/img/favicon.png" />
 </head>
 <body>
 <header class="site-header">
-  <a class="logo" href="../index.html">PakPax</a>
+  <a class="logo" href="../index.html">PakPaxtor</a>
   <nav class="nav">
+    <a href="../about/index.html">Sobre mí</a>
     <a href="../works/index.html">Proyectos</a>
     <a href="../experiments/index.html">Laboratorio</a>
     <a href="../manifesto/index.html">Manifiesto</a>
+    <a target="_blank" rel="noopener me" href="https://www.linkedin.com/in/pacopastorgomez/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.97-2.9 4v7.74h-5V8z"/></svg></a>
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/pakpaxtor/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 007 13a5.5 5.5 0 0010 0 5.5 5.5 0 00-5-5.5zm0 2A3.5 3.5 0 1111.5 13 3.5 3.5 0 0112 9.5zM17.5 6A1.5 1.5 0 1116 7.5 1.5 1.5 0 0117.5 6z"/></svg></a>
+    <a target="_blank" rel="noopener" href="https://www.youtube.com/@pakpaxtor" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.8 3.5 12 3.5 12 3.5s-7.8 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.6.6 9.4.6 9.4.6s7.8 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
     <a class="cta" href="../contact/index.html">Conecta</a>
   </nav>
 </header>
 
-<main class="container page">
+<main class="container page lab has-tabs">
   <header class="page-header">
     <h2>Laboratorio</h2>
     <p>Aquí es donde juego, pruebo y rompo las reglas. El laboratorio mezcla ideas con código; la intuición se convierte en imagen, sonido o sistema.</p>
   </header>
 
-  <section class="subnav">
-    <a href="#ai-video">AI Video Experiments</a>
-    <a href="#uxp">UXP Plugins & Integrations</a>
-    <a href="#radio">Radio Laion / AI Music</a>
-    <a href="#solaris">Solaris Bot & Predictive Systems</a>
-    <a href="#prompts">Prompt Studies / Visual Tests</a>
+  <section class="tabs">
+    <button class="tab active" data-target="#tab-video" aria-label="Ver experimentos de video con IA">AI Video Experiments</button>
+    <button class="tab" data-target="#tab-radio" aria-label="Ver Radio Laion, canal de música generada con IA">Radio Laion / AI Music</button>
+    <button class="tab" data-target="#tab-zen" aria-label="Ver Portal ZEN, canal de meditación con IA">Portal ZEN / Meditación</button>
   </section>
 
-  <section id="ai-video" class="grid">
-    <h3>AI Video Experiments</h3>
-    <article class="card">
-      <div class="thumb"></div>
-      <p>Ensayos con Sora, Veo, Kling — coherencia de color, ritmo y look dev.</p>
-    </article>
+  <section id="tab-video" class="tab-section show">
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Cinematic AI & Storytelling</h4>
+        <p>Narrativa cinematográfica con coherencia visual y dramática. Explorando los límites de la IA para contar historias con lenguaje cinematográfico.</p>
+      </header>
+      <div class="grid video-grid">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/OB_iNZC9_Wo" title="BAJO EL CIELO DE ENERO — 100% AI TRAILER" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>BAJO EL CIELO DE ENERO</h3>
+          <p>Trailer cinematográfico 100% generado con IA explorando expresiones humanas y actuación. Generado con Hailuo Minimax (text-to-video), el objetivo es lograr interpretaciones realistas y emotivas sin captura de movimiento ni actores reales.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/W-ZDxPtrrlA" title="THE TRAIN STATION — 100% AI Movie" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>THE TRAIN STATION</h3>
+          <p>Experimento cinematográfico: ¿puede la IA crear un prólogo de película completamente realista? Prompting avanzado, Loras y técnicas de cinematografía llevadas al límite para lograr máxima coherencia visual.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/NpuZO5Wv1Ws" title="THE MAYAS — 100% AI DOCUMENTARY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>THE MAYAS</h3>
+          <p>Documental generado con VEO2 sobre la civilización maya. Un test de coherencia narrativa en estilo documental: ¿puede la IA mantener tono, atmósfera y lenguaje cinematográfico a lo largo de una pieza?</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Automated Content Systems</h4>
+        <p>Ecosistema programado en Python para creación de documentales a partir de <strong>LOCALIZACIÓN + FECHA</strong>. Pipeline 100% automatizado: guion, prompts, generación de video, voces, música y montaje final. Todo orquestado por IA sin intervención humana.</p>
+      </header>
+      <div class="grid video-grid two-videos">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/WB3KjrlAhSo" title="CONSTANTINOPLA, 1453 — 100% Automated AI Documentary" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>CONSTANTINOPLA, 1453</h3>
+          <p>Documental histórico generado completamente por sistema automatizado. Input: localización y fecha. Output: guion, voces sintéticas, música original, video generativo y montaje. Pipeline Python que orquesta todo el flujo creativo sin intervención manual.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/TgouLQ7T6Lg" title="NEW YORK, 2050 — 100% Automated AI Documentary" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>NEW YORK, 2050</h3>
+          <p>Documental especulativo sobre el futuro. El sistema automatizado genera narrativa de ciencia ficción, visuales futuristas, soundscape y edición final. Mismo pipeline, género diferente: de historia real a especulación futurista.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Puppets, Claymation & Animation</h4>
+        <p>Exploraciones en animación física generada por IA: marionetas, claymation y estéticas texturizadas. Lo artificial que imita lo artesanal.</p>
+      </header>
+      <div class="grid video-grid two-videos">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/DFxJC_GOc48" title="SESAME STREET AI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>SESAME STREET AI</h3>
+          <p>Prototipando un episodio estilo "Sesame Street" con VEO3 (no Sora). Exploración de estética puppet/claymation y narrativa infantil educativa generada completamente por IA.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/owOMz9iOo5Y" title="SCRAPGUTS — AI CLAIMATION Opening Scene" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>SCRAPGUTS</h3>
+          <p>Escena de apertura estilo claymation oscuro. Exploración de estética post-apocalíptica con texturas orgánicas generadas por IA. 🗑️☢️🔥 Los mejores planos aparecen después del segundo 30.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Horror & Dark Fiction</h4>
+        <p>Terror psicológico y atmósferas inquietantes generadas con IA. Exploraciones en narrativas oscuras y perturbadoras.</p>
+      </header>
+      <div class="grid video-grid two-videos">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kmJEsWUdSps" title="the game | a short horror film" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>the game</h3>
+          <p>Un joven encuentra un videojuego maldito que cambiará su vida para siempre. Terror psicológico y atmósferas inquietantes generadas con IA. Narrativa claustrofóbica que explora la adicción y el horror digital.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/CwVkdoQUEk4" title="Halloween Horror Short 100% IA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>Halloween Horror Short</h3>
+          <p>Corto de terror psicológico escrito, dirigido y producido por MAIA (IA colaboradora). Historia de culpa eterna: una mujer atormentada por sus hijos cada noche. Terror visceral 100% generado por IA.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Audio Fiction & Voice Cloning</h4>
+        <p>Clonación de voces ultra-realistas, podcasts automatizados y experimentos narrativos con IA conversacional. La frontera entre lo humano y lo sintético.</p>
+      </header>
+      <div class="grid video-grid">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/WrtCCcCTX34" title="Vaya Huevazos - Ford Farlain Detective" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>Vaya Huevazos — Radionovela IA</h3>
+          <p>Primer episodio de "El Caso del Tío de los Huevos Gordos" con Ford Farlain. Radionovela de misterio y comedia con clonación de voces ultra-realistas. Un detective investiga la desaparición de una celebridad viral. Humor, intriga y voces sintéticas indistinguibles de las humanas.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/zvLmp0HX6fI" title="El futuro, ¡Qué flipada!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>El futuro, ¡Qué flipada!</h3>
+          <p>Conversación entre Ford y Brad en un podcast sobre la naturaleza de la conciencia y su evolución tecnológica. Exploran la transferencia de conciencia a máquinas y la singularidad de Kurzweil para 2045. Podcast producido automáticamente por IA.</p>
+        </article>
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/T2b31FLm-QQ" title="EN QUÉ PIENSA NICOLAS CAGE?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>EN QUÉ PIENSA NICOLAS CAGE?</h3>
+          <p>Experimento con GPT customizado que emula el pensamiento de Nicolas Cage. Monólogo interior generado por IA: reflexiones sobre su carrera entre fantasías sobre tikka masala. Exploración de personalidades sintéticas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>AI Music & Sound Design</h4>
+        <p>Música generativa con IA: GPT fine-tuned para letras, sound design 3D inmersivo y producción automatizada.</p>
+      </header>
+      <div class="grid video-grid single-video">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/t2neBIagvXw" title="bSIDE presents SUMMER LETHARGY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>SUMMER LETHARGY — AI Music</h3>
+          <p>14 minutos de música inmersiva generada con IA. Creé "Marcus", un GPT fine-tuned como ghostwriter de Miami, y usé prompts especializados para sonido 3D con Udio. Fusión de electronic, reggae, soul y rock.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="campaign">
+      <header class="page-header">
+        <h4>Technical Tests & VEO3</h4>
+        <p>Pruebas de fronteras técnicas: experimentación con nuevos modelos y capacidades emergentes de la IA generativa.</p>
+      </header>
+      <div class="grid video-grid single-video">
+        <article class="card video-card">
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/5wOI3qPoKEA" title="VEO3 360º video test" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+          <h3>VEO3 360º test</h3>
+          <p>Experimento pionero: primera prueba de generación de video inmersivo 360º con VEO3. Explorando las capacidades del modelo para crear contenido esférico navegable. Test de fronteras técnicas de la IA generativa.</p>
+        </article>
+      </div>
+    </section>
   </section>
 
-  <section id="uxp" class="grid">
-    <h3>UXP Plugins & Integrations</h3>
-    <article class="card">
-      <div class="thumb"></div>
-      <p>Extensiones que integran IA directamente en Premiere y Photoshop.</p>
-    </article>
+  <section id="tab-radio" class="tab-section">
+    <section class="campaign">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div>
+          <a href="https://www.youtube.com/@RADIOLAION" target="_blank" rel="noopener">
+            <img src="../Captura de pantalla 2025-10-16 145646.png" alt="Radio Laion - 24/7 Dub & Reggae Stream" style="width: 100%; border-radius: 16px; border: 1px solid rgba(109, 40, 217,.2); cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <div>
+            <p style="color: var(--muted); margin-bottom: 18px; line-height: 1.7; text-align: left;">
+              Dub, reggae y frecuencia generativa. <strong style="color: var(--fg);">Canal 100% automatizado por IA</strong>: desde la producción musical hasta la subida y gestión del contenido. Un laboratorio sonoro autónomo donde las inteligencias sintéticas crean, publican y operan sin intervención humana.
+            </p>
+            <p style="color: var(--muted); margin-bottom: 18px; text-align: center;">🎵 Stream 24/7 en vivo</p>
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://www.youtube.com/@RADIOLAION" aria-label="Radio Laion YouTube" style="display: inline-block;">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.8 3.5 12 3.5 12 3.5s-7.8 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.6.6 9.4.6 9.4.6s7.8 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              Escuchar Radio Laion
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 
-  <section id="radio" class="grid">
-    <h3>Radio Laion / AI Music</h3>
-    <article class="card">
-      <div class="thumb"></div>
-      <p>Dub, reggae y frecuencia generativa. Laboratorio sonoro con inteligencias sintéticas.</p>
-    </article>
-  </section>
-
-  <section id="solaris" class="grid">
-    <h3>Solaris Bot & Predictive Systems</h3>
-    <article class="card">
-      <div class="thumb"></div>
-      <p>IA matemática cruzando datos solares y comportamiento de mercado.</p>
-    </article>
-  </section>
-
-  <section id="prompts" class="grid">
-    <h3>Prompt Studies / Visual Tests</h3>
-    <article class="card">
-      <div class="thumb"></div>
-      <p>Pruebas de consistencia, color y narrativa visual generativa.</p>
-    </article>
+  <section id="tab-zen" class="tab-section">
+    <section class="campaign">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div>
+          <a href="https://www.youtube.com/@Portal_ZEN" target="_blank" rel="noopener">
+            <img src="../Captura de pantalla 2025-10-16 145353.png" alt="Portal ZEN - Meditación Guiada" style="width: 100%; border-radius: 16px; border: 1px solid rgba(109, 40, 217,.2); cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'" />
+          </a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <div>
+            <p style="color: var(--muted); margin-bottom: 18px; line-height: 1.7; text-align: left;">
+              Viajes de meditación y visualización creativa <strong style="color: var(--fg);">100% generados por IA</strong>. Cada video combina narración sintética con técnicas ancestrales de meditación, neurociencia moderna y frecuencias específicas. Un experimento sobre cómo la IA puede facilitar estados profundos de relajación y expansión de consciencia.
+            </p>
+            <p style="color: var(--muted); margin-bottom: 18px; text-align: center;">🧘‍♂️ Viajes de consciencia</p>
+            <a class="btn secondary" target="_blank" rel="noopener" href="https://www.youtube.com/@Portal_ZEN" aria-label="Portal ZEN YouTube" style="display: inline-block;">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.8 3.5 12 3.5 12 3.5s-7.8 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.6.6 9.4.6 9.4.6s7.8 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              Explorar Portal ZEN
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </main>
 <footer class="site-footer">
-  <p>© 2025 PakPax — Hecho con HTML/CSS y GitHub Pages.</p>
+  <p>© 2025 PakPaxtor — Hecho con HTML/CSS y GitHub Pages.</p>
+  <p>
+    <a target="_blank" rel="noopener me" href="https://www.linkedin.com/in/pacopastorgomez/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.33 6 7.66V24h-5v-7.6c0-1.81-.03-4.14-2.52-4.14-2.52 0-2.9 1.97-2.9 4v7.74h-5V8z"/></svg></a>
+    <a target="_blank" rel="noopener" href="https://www.instagram.com/pakpaxtor/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3.5A5.5 5.5 0 007 13a5.5 5.5 0 0010 0 5.5 5.5 0 00-5-5.5zm0 2A3.5 3.5 0 1111.5 13 3.5 3.5 0 0112 9.5zM17.5 6A1.5 1.5 0 1116 7.5 1.5 1.5 0 0117.5 6z"/></svg></a>
+    <a target="_blank" rel="noopener" href="https://www.youtube.com/@pakpaxtor" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.8 3.5 12 3.5 12 3.5s-7.8 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.6.6 9.4.6 9.4.6s7.8 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+  </p>
 </footer>
 
+
+<script>
+const tabs = document.querySelectorAll('.tab');
+const sections = document.querySelectorAll('main .tab-section');
+tabs.forEach(function(t){
+  t.addEventListener('click', function(){
+    tabs.forEach(function(tb){ tb.classList.remove('active'); });
+    t.classList.add('active');
+    sections.forEach(function(s){ s.classList.remove('show'); });
+    var target = document.querySelector(t.getAttribute('data-target'));
+    if (target) target.classList.add('show');
+  });
+});
+</script>
 </body>
 </html>
