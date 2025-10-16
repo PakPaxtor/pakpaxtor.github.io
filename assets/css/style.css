@@ -202,7 +202,8 @@ a { color: var(--acc); text-decoration: none; }
 }
 .hero-media .hero-video-stack iframe { 
   width: 100%; aspect-ratio: 16/9; border:0; display: block; 
-  pointer-events: none; 
+  pointer-events: none;
+  background: #000;
 }
 .hero-media .hero-video-stack::after { 
   content: ''; position: absolute; inset: 0; 
