@@ -849,7 +849,11 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   .campaign h4 { font-size: 1.3rem; }
   
   .about .cols { grid-template-columns: 1fr; gap: 32px; }
-  .about .profile-img { max-width: 200px; margin: 0 auto 24px; }
+  .about .profile-img { 
+    max-width: 250px; 
+    margin: 0 auto 24px; 
+    display: block;
+  }
   .about h2 { font-size: clamp(24px, 6vw, 36px); text-align: center; }
   .about h3 { font-size: 1.3rem; }
   .about .cta-row { justify-content: center; }
@@ -925,7 +929,10 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   .video-card p { font-size: 0.9rem; }
   .meta li { font-size: 0.8rem; padding: 3px 8px; }
   
-  .about .profile-img { max-width: 160px; }
+  .about .profile-img { 
+    max-width: 200px;
+    display: block;
+  }
   .about h2 { font-size: clamp(22px, 7vw, 32px); }
   .about h3 { font-size: 1.2rem; }
   .about p { font-size: 0.95rem; }
