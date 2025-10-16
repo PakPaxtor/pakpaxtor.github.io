@@ -796,11 +796,13 @@ blockquote { border-left: 4px solid var(--brand); padding-left: 20px; margin: 24
   
   #lang-switcher {
     position: absolute;
-    top: 12px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 4vw;
     margin-left: 0;
     padding-left: 0;
     order: 1;
+    z-index: 10;
   }
   #lang-switcher button {
     font-size: 0.7rem;
